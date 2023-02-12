@@ -134,7 +134,7 @@
               </p>
             </li>
           </ol>
-          <button class="test-drive-button">
+          <button class="test-drive-button" data-toggle="modal">
             <span class="test-drive-button-text">Записаться</span>
           </button>
         </div>
@@ -319,7 +319,7 @@
                   </svg>
                 </button>
               </div>
-              <button class="model-features-button">
+              <button class="model-features-button" data-toggle="modal">
                 <span class="model-features-button-text"
                   >Записаться на тест-драйв</span
                 >
@@ -397,7 +397,7 @@
                   </svg>
                 </button>
               </div>
-              <button class="model-features-button">
+              <button class="model-features-button" data-toggle="modal">
                 <span class="model-features-button-text"
                   >Записаться на тест-драйв</span
                 >
@@ -475,7 +475,7 @@
                   </svg>
                 </button>
               </div>
-              <button class="model-features-button">
+              <button class="model-features-button" data-toggle="modal">
                 <span class="model-features-button-text"
                   >Записаться на тест-драйв</span
                 >
@@ -553,7 +553,7 @@
                   </svg>
                 </button>
               </div>
-              <button class="model-features-button">
+              <button class="model-features-button" data-toggle="modal">
                 <span class="model-features-button-text"
                   >Записаться на тест-драйв</span
                 >
@@ -720,7 +720,9 @@
               </li>
             </ul>
           </div>
-          <a href="#" class="footer-link-item">Заказать звонок</a>
+          <a href="#" class="footer-link-item" data-toggle="modal"
+            >Заказать звонок</a
+          >
         </div>
         <div class="footer-seporator"></div>
         <div class="footer-programs">
@@ -845,6 +847,61 @@
         </div>
       </div>
     </section>
+    <div class="modal">
+      <div class="modal-container">
+        <div class="modal-dialog">
+          <h2 class="modal-title">Запишитесь на тест-драйв электросамоката</h2>
+          <a href="#" class="modal-close">
+            <svg class="modal-close-icon" width="29" height="29">
+              <use href="img/sprite.svg#close"></use>
+            </svg>
+          </a>
+          <p class="modal-text">и подберите модель для себя</p>
+          <p class="modal-text">
+            Менеджер свяжется с вами в течение 5 минут, чтобы согласовать время.
+          </p>
+          <p class="modal-dialog-form-text">Как с вами удобнее связаться?</p>
+          <form action="#" class="modal-form">
+            <div class="modal-form-button">
+              <div class="input-group modal-input-group">
+                <input
+                  id="user-phone-modal"
+                  type="tel"
+                  class="input"
+                  placeholder=" "
+                />
+                <label class="input-group-label" for="user-phone-modal"
+                  >Номер телефона</label
+                >
+              </div>
+              <button class="cta-button modal-button">
+                <span class="cta-button-text">Оформить предзаказ</span>
+              </button>
+            </div>
+            <div class="cta-argeement">
+              <input
+                id="cta-highload-modal"
+                class="cta-argeement-input"
+                name="cta-highload"
+                type="checkbox"
+              />
+              <label
+                for="cta-highload-modal"
+                class="cta-argeement-text"
+              ></label>
+              <p class="cta-argeement-text modal-form-argement-text">
+                Нажимая на кнопку, вы соглашаетесь на обработку персональных
+                данных и
+                <a href="#" class="modal-argement-link"
+                  >политикой конфиденциальности</a
+                >
+              </p>
+            </div>
+          </form>
+        </div>
+        <img src="img/modal-image.png" alt="" class="modal-image" />
+      </div>
+    </div>
     <script src="js/main.js "></script>
   </body>
 </html>
