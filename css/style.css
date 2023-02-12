@@ -1,3 +1,4 @@
+@import url("normalize.css");
 * {
   box-sizing: border-box;
 }
@@ -567,12 +568,12 @@ body {
   bottom: 0;
   right: 11.25rem;
 }
-.cta-form-wrapper {
+.cta-form-wrapper-box {
   display: flex;
   align-items: center;
-  max-width: 40rem;
 }
-.cta-form {
+.cta-form-wrapper {
+  max-width: 40rem;
   margin-top: 5.625rem;
 }
 .cta-form-title {

@@ -14,7 +14,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Главная - KUGOO</title>
   </head>
@@ -567,49 +566,54 @@
       <div class="bg-grey">
         <div class="container">
           <img src="img/cta.png" alt="Заявка " class="cta-image" />
-          <div class="cta-form-wrapper">
-            <form action="#" class="cta-form">
+          <div class="cta-form-wrapper-box">
+            <div class="cta-form-wrapper">
               <h2 class="cta-form-title">
                 Нет нужной модели, которую хотите протестировать?
               </h2>
               <p class="cta-form-text">
                 Оставьте заявку, и менеджер подберет нужный самокат
               </p>
-              <div class="input-group-button">
-                <div class="input-group">
-                  <input
-                    id="user-phone"
-                    type="tel"
-                    class="input"
-                    placeholder=" "
-                  />
-                  <label class="input-group-label" for="user-phone"
-                    >Номер телефона</label
-                  >
+              <form action="handler.php" method="POST" class="cta-form">
+                <div class="input-group-button">
+                  <div class="input-group">
+                    <input
+                      id="user-phone"
+                      type="tel"
+                      class="input phone-mask"
+                      name="userphone"
+                      placeholder=" "
+                      maxlength="30"
+                       required
+                    />
+                    <label class="input-group-label" for="user-phone"
+                      >Номер телефона</label
+                    >
+                  </div>
+                  <button type="submit" class="cta-button">
+                    <span class="cta-button-text"
+                      >Оставить заявку на тест-драйв</span
+                    >
+                  </button>
                 </div>
-                <button class="cta-button">
-                  <span class="cta-button-text"
-                    >Оставить заявку на тест-драйв</span
-                  >
-                </button>
-              </div>
+              </form>
               <div class="cta-argeement">
-                <input
-                  id="cta-highload"
-                  class="cta-argeement-input"
-                  name="cta-highload"
-                  type="checkbox"
+                 <input
+                 id="cta-highload"
+                 class="cta-argeement-input"
+                 name="cta-highload"
+                 type="checkbox"
                 />
                 <label for="cta-highload" class="cta-argeement-text"></label>
                 <p class="cta-argeement-text">
-                  Нажимая на кнопку, вы соглашаетесь на обработку персональных
-                  данных и
-                  <a href="#" class="cta-argeement-link"
-                    >политикой конфиденциальности</a
-                  >
+                 Нажимая на кнопку, вы соглашаетесь на обработку персональных
+                 данных и
+                 <a href="#" class="cta-argeement-link"
+                   >политикой конфиденциальности</a
+                 >
                 </p>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>
@@ -861,20 +865,23 @@
             Менеджер свяжется с вами в течение 5 минут, чтобы согласовать время.
           </p>
           <p class="modal-dialog-form-text">Как с вами удобнее связаться?</p>
-          <form action="#" class="modal-form">
+          <form action="handler.php" method="POST"  class="modal-form form-box">
             <div class="modal-form-button">
               <div class="input-group modal-input-group">
                 <input
                   id="user-phone-modal"
                   type="tel"
-                  class="input"
+                  class="input phone-mask"
+                  name="userphone"
                   placeholder=" "
+                  maxlength="30"
+                  required
                 />
                 <label class="input-group-label" for="user-phone-modal"
                   >Номер телефона</label
                 >
               </div>
-              <button class="cta-button modal-button">
+              <button type="submit" class="cta-button modal-button">
                 <span class="cta-button-text">Оформить предзаказ</span>
               </button>
             </div>
@@ -902,6 +909,7 @@
         <img src="img/modal-image.png" alt="" class="modal-image" />
       </div>
     </div>
+    <script src="js/just-validate.production.min.js"></script>
     <script src="js/main.js "></script>
   </body>
 </html>
