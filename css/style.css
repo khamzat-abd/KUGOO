@@ -662,6 +662,20 @@ body {
   background-color: inherit;
   padding: 0 8px;
 }
+.input.is-invalid {
+  border: 1px solid red;
+}
+.just-validate-error-label {
+  position: absolute;
+  font-size: 0.8rem;
+  top: 0;
+  right: 10px;
+  background-color: inherit;
+  transform: translateY(-50%);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  display: inline-block;
+}
 .cta-argeement {
   display: flex;
   align-items: center;

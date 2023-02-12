@@ -67,14 +67,14 @@
           </div>
           <p class="header-button-text">Каталог</p>
         </button>
-        <form class="input-header-form">
+        <div class="input-header-form">
           <input
             class="input-header"
             type="text"
             placeholder="Искать самокат KUGO"
           />
           <button class="button-input" type="submit"></button>
-        </form>
+        </div>
         <div class="svg-card">
           <a href="" class="svg-card-item">
             <svg class="svg-card-icon" width="20" height="20">
@@ -574,7 +574,7 @@
               <p class="cta-form-text">
                 Оставьте заявку, и менеджер подберет нужный самокат
               </p>
-              <form action="handler.php" method="POST" class="cta-form">
+              <form action="handler.php" method="POST" class="cta-form form-box">
                 <div class="input-group-button">
                   <div class="input-group">
                     <input
@@ -620,8 +620,8 @@
     </section>
     <section class="footer-mail">
       <div class="container">
-        <div class="footer-mail-form-wrapper">
-          <form action="#" class="footer-mail-form">
+        <div class="footer-mail-wrapper">
+          <div class="footer-mail-form">
             <h3 class="footer-mail-title">
               Оставьте свою почту и станьте первым, кто получит скидку на новые
               самокаты
@@ -642,7 +642,7 @@
                 <span class="footer-mail-button-text">Подписаться</span>
               </button>
             </div>
-          </form>
+          </div>
         </div>
       </div>
     </section>
