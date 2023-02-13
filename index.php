@@ -15,6 +15,23 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <title>Главная - KUGOO</title>
   </head>
   <body>
@@ -738,16 +755,16 @@
             <h2 class="footer-title">Каталог товаров</h2>
             <ul class="footer-list">
               <li class="footer-item">
-                <a href="#" class="footer-link">Электросамокаты</a>
+                <a href="#" class="footer-link footer-link-link">Электросамокаты</a>
               </li>
               <li class="footer-item">
-                <a href="#" class="footer-link">Электроскутеры</a>
+                <a href="#" class="footer-link footer-link-link">Электроскутеры</a>
               </li>
               <li class="footer-item">
-                <a href="#" class="footer-link">Электровелосипеды</a>
+                <a href="#" class="footer-link footer-link-link">Электровелосипеды</a>
               </li>
               <li class="footer-item">
-                <a href="#" class="footer-link">Электровелосипеды</a>
+                <a href="#" class="footer-link footer-link-link">Электровелосипеды</a>
               </li>
             </ul>
           </div>
@@ -755,36 +772,36 @@
             <h2 class="footer-title">Покупателям</h2>
             <ul class="footer-list footer-column">
               <li class="footer-item">
-                <a href="#" class="footer-link footer-link-columns"
+                <a href="#" class="footer-link footer-link-link footer-link-columns"
                   >Сервисный центр</a
                 >
               </li>
               <li class="footer-item">
-                <a href="#" class="footer-link footer-link-columns"
+                <a href="#" class="footer-link footer-link-link footer-link-columns"
                   >Доставка и оплата</a
                 >
               </li>
               <li class="footer-item">
-                <a href="#" class="footer-link footer-link-columns"
+                <a href="#" class="footer-link footer-link-link footer-link-columns"
                   >Рассрочка</a
                 >
               </li>
               <li class="footer-item">
-                <a href="#" class="footer-link footer-link-columns"
+                <a href="#" class="footer-link footer-link-link footer-link-columns"
                   >Тест-драйв</a
                 >
               </li>
               <li class="footer-item">
-                <a href="#" class="footer-link">Блог</a>
+                <a href="#" class="footer-link footer-link-link">Блог</a>
               </li>
               <li class="footer-item">
-                <a href="#" class="footer-link">Сотрудничество</a>
+                <a href="#" class="footer-link footer-link-link">Сотрудничество</a>
               </li>
               <li class="footer-item">
-                <a href="#" class="footer-link">Контакты</a>
+                <a href="#" class="footer-link footer-link-link">Контакты</a>
               </li>
               <li class="footer-item">
-                <a href="#" class="footer-link">Акции</a>
+                <a href="#" class="footer-link footer-link-link">Акции</a>
               </li>
             </ul>
           </div>

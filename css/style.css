@@ -1181,41 +1181,6 @@ body {
 .mobile-menu {
   display: none;
 }
-@media (max-width: 1460px) {
-  html {
-    font-size: 13.9px;
-  }
-  .header-nav {
-    gap: 0.9rem;
-  }
-  .proper-container-box {
-    margin-left: 32rem;
-  }
-  .footer-link-columns {
-    margin-right: 3rem;
-  }
-  .footer-info-requisit {
-    margin-right: 2rem;
-  }
-  .footer-program {
-    margin-right: 15rem;
-  }
-  .model-features-button {
-    margin: 0.5rem 1.5625rem;
-  }
-  .model-features-footer-title {
-    margin: 1rem 1.5rem;
-  }
-  .model-features-item-plaza-green {
-    padding: 2px;
-  }
-  .model-features-item-plaza {
-    padding: 3px 7px;
-  }
-  .input-header-form {
-    width: 34rem;
-  }
-}
 @media (max-width: 1200px) {
   html {
     font-size: 12px;
@@ -1516,6 +1481,39 @@ body {
   }
 }
 @media (min-width: 992px) {
+  .header-nav-link:hover {
+    color: #6f73ee;
+  }
+  .header-button:hover {
+    background: #8e91d7;
+  }
+  .button-input:hover {
+    background: #8e91d7;
+  }
+  .header-phone-link:hover {
+    color: #6f73ee;
+  }
+  .model-features-button:hover {
+    background: #8e91d7;
+  }
+  .cta-button:hover {
+    background: #8e91d7;
+  }
+  .footer-mail-button:hover {
+    background: #f4f7fb;
+  }
+  .footer-link-link:hover {
+    color: #6f73ee;
+  }
+  .footer-phone:hover {
+    color: #6f73ee;
+  }
+  .footer-info-confidentiality:hover {
+    border-color: #5d6c7b;
+  }
+  .footer-info-requisit:hover {
+    border-color: #5d6c7b;
+  }
   .cta-argeement-link:hover {
     border-color: #282739;
   }
