@@ -1,5 +1,38 @@
 const modal = document.querySelector(".modal");
 const modalContainer = document.querySelector(".modal-container");
+const forms = document.querySelectorAll("form");
+const header = document.querySelector(".header");
+const seporator = document.querySelector(".seporator-header");
+const mMenuToggle = document.querySelector(".mobile-menu-toggle");
+const menu = document.querySelector(".mobile-menu");
+
+const openMenu = (event) => {
+  // функция открывания меню
+  menu.classList.add("is-open"); // вешает класс is-open
+  mMenuToggle.classList.add("close-menu");
+  document.body.style.overflow = "hidden"; // запрещаем прокрутку сайта под меню
+};
+const closeMenu = (event) => {
+  // функция закрывания меню
+  menu.classList.remove("is-open"); // уберает класс is-open
+  mMenuToggle.classList.remove("close-menu");
+  document.body.style.overflow = ""; // возвращает прокрутку сайта под меню
+};
+
+mMenuToggle.addEventListener("click", (event) => {
+  event.preventDefault();
+  menu.classList.contains("is-open") ? closeMenu() : openMenu();
+});
+
+window.addEventListener("scroll", () => {
+  if (this.scrollY > 80) {
+    header.classList.add("header-fixed");
+    seporator.classList.add("seporator-margin");
+  } else {
+    header.classList.remove("header-fixed");
+    seporator.classList.remove("seporator-margin");
+  }
+});
 
 document.addEventListener("click", (event) => {
   if (
@@ -18,7 +51,6 @@ document.addEventListener("keyup", (event) => {
   }
 });
 
-const forms = document.querySelectorAll("form");
 forms.forEach((form) => {
   const validation = new JustValidate(form, {
     errorFieldCssClass: "is-invalid",

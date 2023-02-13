@@ -19,7 +19,7 @@
   </head>
   <body>
     <div class="container">
-      <nav class="navbar">
+      <nav class="header-navbar">
         <ul class="header-nav">
           <li class="header-nav-item">
             <a href="#" class="header-nav-link">Сервис</a>
@@ -55,44 +55,129 @@
         </div>
       </nav>
     </div>
-    <div class="seporator"></div>
-    <div class="container">
-      <div class="header">
-        <a href="./" class="header-logo">KUGOO</a>
-        <button href="#" class="header-button">
-          <div class="header-button-lines">
-            <ul class="header-button-line"></ul>
-            <ul class="header-button-line"></ul>
-            <ul class="header-button-line"></ul>
-          </div>
-          <p class="header-button-text">Каталог</p>
-        </button>
-        <div class="input-header-form">
-          <input
-            class="input-header"
-            type="text"
-            placeholder="Искать самокат KUGO"
-          />
-          <button class="button-input" type="submit"></button>
+    <div class="seporator-header"></div>
+    <div class="mobile-menu">
+      <div class="mobile-menu-buttom">
+        <div class="mobile-menu-wrapper">
+          <h2 class="mobile-menu-title">Каталог товаров</h2>
+          <ul class="mobile-menu-list">
+            <li class="footer-item">
+              <a href="#" class="mobile-menu-link">Электросамокаты</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="mobile-menu-link">Электроскутеры</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="mobile-menu-link">Электровелосипеды</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="mobile-menu-link">Электровелосипеды</a>
+            </li>
+          </ul>
         </div>
-        <div class="svg-card">
-          <a href="" class="svg-card-item">
-            <svg class="svg-card-icon" width="20" height="20">
-              <use href="img/sprite.svg#balance"></use>
-            </svg>
-          </a>
-          <a href="" class="svg-card-item">
-            <svg class="svg-card-icon" width="20" height="20">
-              <use href="img/sprite.svg#heart"></use>
-            </svg>
-          </a>
-          <a href="" class="svg-card-item">
-            <svg class="svg-card-icon" width="20" height="20">
-              <use href="img/sprite.svg#shoping"></use>
-            </svg>
-            <p class="svg-card-text">Корзина</p>
-          </a>
+        <div class="mobile-menu-wrapper">
+          <h2 class="mobile-menu-title">Покупателям</h2>
+          <ul class="mobile-menu-list mobile-menu-column">
+            <li class="footer-item">
+              <a href="#" class="mobile-menu-link footer-link-columns"
+                >Сервисный центр</a
+              >
+            </li>
+            <li class="footer-item">
+              <a href="#" class="mobile-menu-link footer-link-columns"
+                >Доставка и оплата</a
+              >
+            </li>
+            <li class="footer-item">
+              <a href="#" class="mobile-menu-link footer-link-columns"
+                >Рассрочка</a
+              >
+            </li>
+            <li class="footer-item">
+              <a href="#" class="mobile-menu-link footer-link-columns"
+                >Тест-драйв</a
+              >
+            </li>
+            <li class="footer-item">
+              <a href="#" class="mobile-menu-link">Блог</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="mobile-menu-link">Сотрудничество</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="mobile-menu-link">Контакты</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="mobile-menu-link">Акции</a>
+            </li>
+          </ul>
         </div>
+        <div class="mobile-menu-wrapper">
+          <h2 class="mobile-menu-title">Контакты</h2>
+          <ul class="mobile-menu-list mobile-menu-title-column">
+            <li class="footer-item">
+              <p class="mobile-menu-link">Call-центр</p>
+              <a href="tel:+78005055461" class="mobile-menu-phone">
+                +7 (800) 505-54-61</a
+              >
+              <p class="mobile-menu-link footer-link-time">Пн-Вс 10:00 - 20:00</p>
+            </li>
+            <li class="footer-item">
+              <p class="mobile-menu-link">Сервисный центр</p>
+              <a href="tel:+74993507692" class="mobile-menu-phone">
+                +7 (499) 350-76-92</a
+              >
+              <p href="#" class="mobile-menu-link footer-link-time">
+                Пн-Вс 10:00 - 20:00
+              </p>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="mobile-menu-link-item" data-toggle="modal"
+          >Заказать звонок</a
+        >
+      </div>
+    </div>
+    <div class="header">
+      <a href="#" class="mobile-menu-toggle">
+        <div class="mobile-menu-line"></div>
+        <div class="mobile-menu-line"></div>
+        <div class="mobile-menu-line"></div>
+      </a>
+      <a href="./" class="header-logo header-logo-menu">KUGOO</a>
+      <button href="#" class="header-button">
+        <div class="header-button-lines">
+          <ul class="header-button-line"></ul>
+          <ul class="header-button-line"></ul>
+          <ul class="header-button-line"></ul>
+        </div>
+        <p class="header-button-text">Каталог</p>
+      </button>
+      <div class="input-header-form">
+        <input
+          class="input-header"
+          type="text"
+          placeholder="Искать самокат KUGO"
+        />
+        <button class="button-input" type="submit"></button>
+      </div>
+      <div class="svg-card">
+        <a href="" class="svg-card-item">
+          <svg class="svg-card-icon" width="20" height="20">
+            <use href="img/sprite.svg#balance"></use>
+          </svg>
+        </a>
+        <a href="" class="svg-card-item">
+          <svg class="svg-card-icon" width="20" height="20">
+            <use href="img/sprite.svg#heart"></use>
+          </svg>
+        </a>
+        <a href="" class="svg-card-item">
+          <svg class="svg-card-icon" width="20" height="20">
+            <use href="img/sprite.svg#shoping"></use>
+          </svg>
+          <p class="svg-card-text">Корзина</p>
+        </a>
       </div>
     </div>
     <header class="container-image">
