@@ -37,6 +37,7 @@ body {
   line-height: 17px;
   color: #5d6c7b;
   text-decoration: none;
+  transition: color 0.2s;
 }
 .header-svg {
   gap: 0.5313rem;
@@ -58,6 +59,7 @@ body {
   font-size: 12px;
   line-height: 17px;
   color: #282739;
+  transition: color 0.2s;
 }
 .seporator {
   border-bottom: 1px solid #ecf3ff;
@@ -111,6 +113,7 @@ body {
   height: 2.5rem;
   cursor: pointer;
   margin-right: 1.25rem;
+  transition: background-color 0.2s;
 }
 .header-button-text {
   font-family: "Jost";
@@ -166,6 +169,7 @@ body {
   background: #6f73ee;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
+  transition: background-color 0.2s;
 }
 .button-input:before {
   content: "\f002";
@@ -566,6 +570,7 @@ body {
   width: 12.8125rem;
   height: 2.1875rem;
   cursor: pointer;
+  transition: background-color 0.2s;
 }
 .model-features-button-text {
   display: flex;
@@ -629,6 +634,7 @@ body {
   border-radius: 5px;
   border: #f4f7fb;
   cursor: pointer;
+  transition: background-color 0.2s;
 }
 .cta-button-text {
   display: flex;
@@ -780,6 +786,7 @@ body {
   width: 8.75rem;
   height: 3.3125rem;
   cursor: pointer;
+  transition: background-color 0.2s;
 }
 .footer-mail-button-text {
   font-family: "Jost";
@@ -895,6 +902,7 @@ body {
   font-size: 1rem;
   line-height: 23px;
   color: #282739;
+  transition: color 0.2s;
 }
 .footer-title-column {
   columns: 2 auto;
@@ -1025,9 +1033,11 @@ body {
   line-height: 17px;
   color: #5d6c7b;
   text-decoration: none;
+  transition: border 0.2s;
 }
 .footer-info-requisit {
   margin-right: 2.8125rem;
+  transition: border 0.2s;
 }
 .footer-info-social-link {
   display: flex;
@@ -1180,6 +1190,9 @@ body {
 }
 .mobile-menu {
   display: none;
+}
+.footer-link-link {
+  transition: color 0.2s;
 }
 @media (max-width: 1200px) {
   html {
