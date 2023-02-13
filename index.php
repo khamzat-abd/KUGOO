@@ -227,6 +227,7 @@
     <section class="blog">
       <div class="container">
         <div class="blog-container">
+          <img src="img/scooter.jpg" alt="Самокат" class="blog-image" />
           <div class="blog-container-box">
             <h2 class="section-title-black">
               Определите максимально подходящую вам модель
@@ -267,7 +268,6 @@
               </li>
             </ul>
           </div>
-          <img src="img/scooter.jpg" alt="Самокат" class="blog-image" />
         </div>
       </div>
     </section>
