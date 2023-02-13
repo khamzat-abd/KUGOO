@@ -330,6 +330,7 @@ body {
   margin-top: 2.5rem;
   margin-bottom: 3.4375rem;
   cursor: pointer;
+  transition: background-color 0.2s;
 }
 .test-drive-button-text {
   font-family: "Jost";
@@ -1526,6 +1527,9 @@ body {
   }
   .footer-info-requisit:hover {
     border-color: #5d6c7b;
+  }
+  .test-drive-button:hover {
+    background: #f4f7fb;
   }
   .cta-argeement-link:hover {
     border-color: #282739;
