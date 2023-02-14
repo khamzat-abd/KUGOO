@@ -219,7 +219,7 @@ body {
   border-radius: 10px;
   background-image: url(../img/image-woman.jpg);
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-position: right;
   position: relative;
   height: 27.5rem;
@@ -1256,22 +1256,22 @@ body {
     font-size: 12px;
   }
   .container {
-    max-width: 67rem;
+    max-width: 71.875rem;
   }
   .header-phone {
-    margin-left: 35.75rem;
+    margin-left: 39.75rem;
   }
   .blog-image {
     position: absolute;
     top: 1rem;
-    right: -6.687rem;
+    right: -5.687rem;
     width: 33.188rem;
     height: 28.25rem;
   }
   .proper-image {
     position: absolute;
     top: 2.7rem;
-    left: -6.687rem;
+    left: -5.687rem;
     width: 35rem;
     height: 30rem;
   }
@@ -1318,7 +1318,17 @@ body {
     margin: 0.2rem 1.5rem;
   }
   .input-header-form {
-    width: 30rem;
+    width: 33rem;
+    margin-right: 2.8rem;
+  }
+  .header-button {
+    margin-right: 3.25rem;
+  }
+  .header-logo {
+    margin-right: 3.188rem;
+  }
+  .container-image {
+    height: 30.5rem;
   }
 }
 @media (max-width: 992px) {
@@ -1326,7 +1336,7 @@ body {
     font-size: 11px;
   }
   .container {
-    max-width: 60rem;
+    max-width: 55rem;
   }
   .header-navbar {
     display: none;
@@ -1469,9 +1479,6 @@ body {
   .footer-mail {
     height: 11.25rem;
   }
-  .footer-buttom {
-    flex-direction: column;
-  }
   .footer-column {
     columns: 1;
   }
@@ -1490,6 +1497,7 @@ body {
   .footer-program {
     align-items: stretch;
     margin-bottom: 1rem;
+    margin-left: 0;
   }
   .footer-networks {
     align-items: stretch;
@@ -1506,8 +1514,17 @@ body {
   .model {
     display: none;
   }
+  .section-title {
+    font-size: 2.5rem;
+    line-height: 35px;
+    max-width: 22.125rem;
+  }
+  .container-image {
+    height: 35.5rem;
+    background-size: cover;
+  }
 }
-@media (max-width: 992px) {
+@media (max-width: 756px) {
   html {
     font-size: 11px;
   }
@@ -1517,8 +1534,14 @@ body {
   .container-image::before {
     background: #6f73ee;
   }
+  .container-image {
+    height: 36.5rem;
+  }
   .footer-mail {
     height: 16.25rem;
+  }
+  .footer-buttom {
+    flex-direction: column;
   }
   .footer-mail-input-button {
     flex-direction: column;

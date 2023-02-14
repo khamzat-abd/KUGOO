@@ -276,7 +276,7 @@
                 </p>
               </li>
               <li class="blog-link">
-                <svg class="blog-link-icon" width="22" height="22"2
+                <svg class="blog-link-icon" width="22" height="22">
                   <use href="img/sprite.svg#check"></use>
                 </svg>
                 <p class="blog-text">
