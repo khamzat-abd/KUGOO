@@ -254,7 +254,7 @@
             <p class="section-text-black">Тест-драйв поможет:</p>
             <ul class="blog-item">
               <li class="blog-link">
-                <svg class="blog-link-icon" width="20" height="20">
+                <svg class="blog-link-icon" width="22" height="22">
                   <use href="img/sprite.svg#check"></use>
                 </svg>
                 <p class="blog-text">
@@ -262,13 +262,13 @@
                 </p>
               </li>
               <li class="blog-link">
-                <svg class="blog-link-icon" width="20" height="20">
+                <svg class="blog-link-icon" width="22" height="22">
                   <use href="img/sprite.svg#check"></use>
                 </svg>
                 <p class="blog-text">Испытать самокат в «реальной жизни»;</p>
               </li>
               <li class="blog-link">
-                <svg class="blog-link-icon" width="20" height="20">
+                <svg class="blog-link-icon" width="22" height="22">
                   <use href="img/sprite.svg#check"></use>
                 </svg>
                 <p class="blog-text">
@@ -276,7 +276,7 @@
                 </p>
               </li>
               <li class="blog-link">
-                <svg class="blog-link-icon" width="20" height="20">
+                <svg class="blog-link-icon" width="22" height="22"2
                   <use href="img/sprite.svg#check"></use>
                 </svg>
                 <p class="blog-text">
@@ -304,19 +304,19 @@
             <p class="section-text-black">На обучении специалист расскажет:</p>
             <ul class="blog-item">
               <li class="blog-link">
-                <svg class="blog-link-icon" width="20" height="20">
+                <svg class="blog-link-icon" width="22" height="22">
                   <use href="img/sprite.svg#check"></use>
                 </svg>
                 <p class="blog-text">Как подготовить самокат к поездке;</p>
               </li>
               <li class="blog-link">
-                <svg class="blog-link-icon" width="20" height="20">
+                <svg class="blog-link-icon" width="22" height="22">
                   <use href="img/sprite.svg#check"></use>
                 </svg>
                 <p class="blog-text">Как «завести» самокат;</p>
               </li>
               <li class="blog-link">
-                <svg class="blog-link-icon" width="20" height="20">
+                <svg class="blog-link-icon" width="22" height="22">
                   <use href="img/sprite.svg#check"></use>
                 </svg>
                 <p class="blog-text">
@@ -325,7 +325,7 @@
                 </p>
               </li>
               <li class="blog-link">
-                <svg class="blog-link-icon" width="20" height="20">
+                <svg class="blog-link-icon" width="22" height="22">
                   <use href="img/sprite.svg#check"></use>
                 </svg>
                 <p class="blog-text">
@@ -333,7 +333,7 @@
                 </p>
               </li>
               <li class="blog-link">
-                <svg class="blog-link-icon" width="20" height="20">
+                <svg class="blog-link-icon" width="22" height="22">
                   <use href="img/sprite.svg#check"></use>
                 </svg>
                 <p class="blog-text">Как ухаживать за своим девайсом.</p>
