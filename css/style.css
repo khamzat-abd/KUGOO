@@ -1245,6 +1245,45 @@ body {
   border-bottom: 1.3px solid #fff;
   transition: border-color 0.2s;
 }
+.modal-container-footer {
+  margin: auto;
+  width: 22.375rem;
+  height: 32.875rem;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  position: relative;
+  transform: translateY(-20%);
+  transition: transform 0.3s;
+}
+.modal-request-button {
+  font-weight: 600;
+  font-size: 0.8rem;
+  line-height: 160%;
+  color: #ffffff;
+  background: #6f73ee;
+  padding: 0.1rem 4.9rem;
+  border: none;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+}
+.modal-dialog-image {
+  width: 18rem;
+  height: 15rem;
+  margin-bottom: 2rem;
+}
+.modal-text-footer {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 20px;
+  color: #282739;
+}
 .mobile-menu {
   display: none;
 }

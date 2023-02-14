@@ -235,7 +235,7 @@
               </p>
             </li>
           </ol>
-          <button class="test-drive-button" data-toggle="modal">
+          <button class="test-drive-button" data-toggle="modal" data-target="#feedback-modal">
             <span class="test-drive-button-text">Записаться</span>
           </button>
         </div>
@@ -420,7 +420,7 @@
                   </svg>
                 </button>
               </div>
-              <button class="model-features-button" data-toggle="modal">
+              <button class="model-features-button" data-toggle="modal" data-target="#feedback-modal">
                 <span class="model-features-button-text"
                   >Записаться на тест-драйв</span
                 >
@@ -498,7 +498,7 @@
                   </svg>
                 </button>
               </div>
-              <button class="model-features-button" data-toggle="modal">
+              <button class="model-features-button" data-toggle="modal" data-target="#feedback-modal">
                 <span class="model-features-button-text"
                   >Записаться на тест-драйв</span
                 >
@@ -576,7 +576,7 @@
                   </svg>
                 </button>
               </div>
-              <button class="model-features-button" data-toggle="modal">
+              <button class="model-features-button" data-toggle="modal" data-target="#feedback-modal">
                 <span class="model-features-button-text"
                   >Записаться на тест-драйв</span
                 >
@@ -654,7 +654,7 @@
                   </svg>
                 </button>
               </div>
-              <button class="model-features-button" data-toggle="modal">
+              <button class="model-features-button" data-toggle="modal" data-target="#feedback-modal">
                 <span class="model-features-button-text"
                   >Записаться на тест-драйв</span
                 >
@@ -826,7 +826,7 @@
               </li>
             </ul>
           </div>
-          <a href="#" class="footer-link-item" data-toggle="modal"
+          <a href="#" class="footer-link-item" data-toggle="modal" data-target="#feedback-modal"
             >Заказать звонок</a
           >
         </div>
@@ -953,11 +953,11 @@
         </div>
       </div>
     </section>
-    <div class="modal">
+    <div class="modal" id="feedback-modal">
       <div class="modal-container">
         <div class="modal-dialog">
           <h2 class="modal-title">Запишитесь на тест-драйв электросамоката</h2>
-          <a href="#" class="modal-close" data-toggle="modal">
+          <a href="#" class="modal-close" data-toggle="modal" data-target="#feedback-modal">
             <svg class="modal-close-icon" width="29" height="29">
               <use href="img/sprite.svg#close"></use>
             </svg>
@@ -1009,6 +1009,29 @@
           </form>
         </div>
         <img src="img/modal-image.png" alt="" class="modal-image" />
+      </div>
+    </div>
+    <div class="modal" id="alert-modal"> 
+      <div class="modal-container modal-container-footer">
+        <div class="modal-dialog">
+          <svg class="modal-dialog-image">
+            <use href="img/sprite.svg#thanks"></use>
+          </svg>
+          <a href="#" class="modal-close" data-toggle="modal" data-target="#alert-modal">
+            <svg class="close-icon" width="24" height="24">
+              <use href="img/sprite.svg#close"></use>
+            </svg>
+          </a>
+          <h2 class="modal-title">Спасибо за заявку!</h2>
+          <p class="modal-text-footer">
+            Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы   и поможем даже в     самых сложных случаях!
+          </p>
+          <div class="modal-form-footer">
+            <a href="./index.php" class="button modal-request-button">
+              <p class="modal-request-button-text">Вернуться на главную</p>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
     <script src="js/just-validate.production.min.js"></script>

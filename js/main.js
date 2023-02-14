@@ -1,5 +1,3 @@
-const modal = document.querySelector(".modal");
-const modalContainer = document.querySelector(".modal-container");
 const formsTel = document.querySelectorAll(".form-tel");
 const formMail = document.querySelector(".form-mail");
 const header = document.querySelector(".header");
@@ -35,20 +33,27 @@ window.addEventListener("scroll", () => {
   }
 });
 
-document.addEventListener("click", (event) => {
-  if (
-    event.target.dataset.toggle == "modal" ||
-    event.target.parentNode.dataset.toggle == "modal" ||
-    (!event.composedPath().includes(modalContainer) &&
-      modal.classList.contains("is-open"))
-  ) {
+let currentModal;
+let modalContainer;
+let alertModal = document.querySelector("#alert-modal");
+
+const modalButtons = document.querySelectorAll("[data-toggle=modal]");
+modalButtons.forEach((button) => {
+  button.addEventListener("click", (event) => {
     event.preventDefault();
-    modal.classList.toggle("is-open");
-  }
+    currentModal = document.querySelector(button.dataset.target);
+    currentModal.classList.toggle("is-open");
+    modalContainer = currentModal.querySelector(".modal-container");
+    currentModal.addEventListener("click", (event) => {
+      if (!event.composedPath().includes(modalContainer)) {
+        currentModal.classList.remove("is-open");
+      }
+    });
+  });
 });
 document.addEventListener("keyup", (event) => {
-  if (event.key == "Escape" && modal.classList.contains("is-open")) {
-    modal.classList.toggle("is-open");
+  if (event.key == "Escape" && currentModal.classList.contains("is-open")) {
+    currentModal.classList.toggle("is-open");
   }
 });
 
@@ -84,9 +89,20 @@ formsTel.forEach((form) => {
         }).then((response) => {
           if (response.ok) {
             thisForm.reset();
-            alert("Форма отправлена");
+            currentModal.classList.remove("is-open");
+            alertModal.classList.add("is-open");
+            currentModal = alertModal;
+            modalContainer = currentModal.querySelector(".modal-container");
+            /* отслеживаем клик по пустому полю*/
+            currentModal.addEventListener("click", (event) => {
+              /* если клик в пустую область */
+              if (!event.composedPath().includes(modalContainer)) {
+                /* закрываем окно */
+                currentModal.classList.remove("is-open");
+              }
+            });
           } else {
-            alert("Ошибка");
+            alert(response.statusText);
           }
         });
       };
