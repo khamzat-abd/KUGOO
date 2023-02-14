@@ -144,7 +144,7 @@
               <a href="tel:+74993507692" class="mobile-menu-phone">
                 +7 (499) 350-76-92</a
               >
-              <p href="#" class="mobile-menu-link footer-link-time">
+              <p class="mobile-menu-link footer-link-time">
                 Пн-Вс 10:00 - 20:00
               </p>
             </li>
@@ -162,13 +162,13 @@
         <div class="mobile-menu-line"></div>
       </a>
       <a href="./" class="header-logo header-logo-menu">KUGOO</a>
-      <button href="#" class="header-button">
-        <div class="header-button-lines">
-          <ul class="header-button-line"></ul>
-          <ul class="header-button-line"></ul>
-          <ul class="header-button-line"></ul>
-        </div>
-        <p class="header-button-text">Каталог</p>
+      <button class="header-button">
+        <span class="header-button-lines">
+          <span class="header-button-line"></span>
+          <span class="header-button-line"></span>
+          <span class="header-button-line"></span>
+        </span>
+        <span class="header-button-text">Каталог</span>
       </button>
       <div class="input-header-form">
         <input
@@ -734,13 +734,14 @@
                   id="user-mail"
                   type="email"
                   class="footer-mail-input"
+                  name="usermail"
                   placeholder=" "
                 />
                 <label class="footer-mail-input-group-label" for="user-mail"
                   >Введите Ваш email</label
                 >
               </div>
-              <button class="footer-mail-button">
+              <button type="submit" class="footer-mail-button">
                 <span class="footer-mail-button-text">Подписаться</span>
               </button>
             </div>
@@ -820,7 +821,7 @@
                 <a href="tel:+74993507692" class="footer-phone">
                   +7 (499) 350-76-92</a
                 >
-                <p href="#" class="footer-link footer-link-time">
+                <p class="footer-link footer-link-time">
                   Пн-Вс 10:00 - 20:00
                 </p>
               </li>
