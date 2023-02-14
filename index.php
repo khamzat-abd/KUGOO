@@ -698,23 +698,22 @@
                     >
                   </button>
                 </div>
+                <div class="cta-argeement">
+                  <input
+                    id="cta-highload"
+                    class="cta-argeement-input"
+                    name="ctahighload"
+                    type="checkbox"
+                  />
+                  <label for="cta-highload" class="cta-argeement-text"></label>
+                  <p class="cta-argeement-text">
+                    Нажимая на кнопку, вы соглашаетесь на обработку персональных
+                    данных и
+                    <a href="#" class="cta-argeement-link"
+                    >политикой конфиденциальности</a>
+                  </p>
+                </div>
               </form>
-              <div class="cta-argeement">
-                 <input
-                 id="cta-highload"
-                 class="cta-argeement-input"
-                 name="cta-highload"
-                 type="checkbox"
-                />
-                <label for="cta-highload" class="cta-argeement-text"></label>
-                <p class="cta-argeement-text">
-                 Нажимая на кнопку, вы соглашаетесь на обработку персональных
-                 данных и
-                 <a href="#" class="cta-argeement-link"
-                   >политикой конфиденциальности</a
-                 >
-                </p>
-              </div>
             </div>
           </div>
         </div>
@@ -992,7 +991,7 @@
               <input
                 id="cta-highload-modal"
                 class="cta-argeement-input"
-                name="cta-highload"
+                name="ctahighload"
                 type="checkbox"
               />
               <label

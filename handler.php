@@ -1,5 +1,6 @@
 <?php
 $user_phone = htmlspecialchars($_POST['userphone']);
+$user_ctahighload = htmlspecialchars($_POST['ctahighload']);
 $user_mail = htmlspecialchars($_POST['usermail']);
 
 $token = "5767548488:AAEoOZZjKpX8A1DYlweqNrNsOtTc_DQL-Lc";

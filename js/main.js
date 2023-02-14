@@ -68,6 +68,12 @@ formsTel.forEach((form) => {
         errorMessage: "Укажите телефон",
       },
     ])
+    .addField("[name=ctahighload]", [
+      {
+        rule: "required",
+        errorMessage: " ",
+      },
+    ])
     .onSuccess((event) => {
       const thisForm = event.target;
       const formData = new FormData(thisForm);
