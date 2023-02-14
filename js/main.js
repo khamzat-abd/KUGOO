@@ -1,6 +1,7 @@
 const modal = document.querySelector(".modal");
 const modalContainer = document.querySelector(".modal-container");
-const forms = document.querySelectorAll("form");
+const formsTel = document.querySelectorAll(".form-tel");
+const formMail = document.querySelector(".form-mail");
 const header = document.querySelector(".header");
 const seporator = document.querySelector(".seporator-header");
 const mMenuToggle = document.querySelector(".mobile-menu-toggle");
@@ -51,7 +52,7 @@ document.addEventListener("keyup", (event) => {
   }
 });
 
-forms.forEach((form) => {
+formsTel.forEach((form) => {
   const validation = new JustValidate(form, {
     errorFieldCssClass: "is-invalid",
   });
@@ -86,6 +87,39 @@ forms.forEach((form) => {
       ajaxSend(formData);
     });
 });
+
+const validation = new JustValidate(formMail, {
+  errorFieldCssClass: "is-invalid",
+});
+validation
+  .addField("[name=usermail]", [
+    {
+      rule: "required",
+      errorMessage: "Укажите email",
+    },
+    {
+      rule: "email",
+      errorMessage: "Укажите email правильно!",
+    },
+  ])
+  .onSuccess((event) => {
+    const thisForm = event.target;
+    const formData = new FormData(thisForm);
+    const ajaxSend = (formData) => {
+      fetch(thisForm.getAttribute("action"), {
+        method: thisForm.getAttribute("method"),
+        body: formData,
+      }).then((response) => {
+        if (response.ok) {
+          thisForm.reset();
+          alert("Форма отправлена");
+        } else {
+          alert("Ошибка");
+        }
+      });
+    };
+    ajaxSend(formData);
+  });
 
 /* Создаем префикс +7, даже если вводят 8 или 9 */
 const prefixNumber = (str) => {

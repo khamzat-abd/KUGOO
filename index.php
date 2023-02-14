@@ -676,7 +676,7 @@
               <p class="cta-form-text">
                 Оставьте заявку, и менеджер подберет нужный самокат
               </p>
-              <form action="handler.php" method="POST" class="cta-form form-box">
+              <form action="handler.php" method="POST" class="cta-form form-box form-tel">
                 <div class="input-group-button">
                   <div class="input-group">
                     <input
@@ -728,7 +728,7 @@
               Оставьте свою почту и станьте первым, кто получит скидку на новые
               самокаты
             </h3>
-            <div class="footer-mail-input-button">
+            <form action="handler.php" method="POST" class="footer-mail-input-button form-mail">
               <div class="footer-mail-input-group">
                 <input
                   id="user-mail"
@@ -744,7 +744,7 @@
               <button type="submit" class="footer-mail-button">
                 <span class="footer-mail-button-text">Подписаться</span>
               </button>
-            </div>
+            </form>
           </div>
         </div>
       </div>
@@ -968,7 +968,7 @@
             Менеджер свяжется с вами в течение 5 минут, чтобы согласовать время.
           </p>
           <p class="modal-dialog-form-text">Как с вами удобнее связаться?</p>
-          <form action="handler.php" method="POST"  class="modal-form form-box">
+          <form action="handler.php" method="POST"  class="modal-form form-box form-tel">
             <div class="modal-form-button">
               <div class="input-group modal-input-group">
                 <input
