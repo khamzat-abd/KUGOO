@@ -177,6 +177,18 @@ body {
   font-size: 1rem;
   color: #fff;
 }
+.svg-icon-viber {
+  fill: #5d6c7b;
+  transition: fill 0.2s;
+}
+.svg-icon-wapp {
+  fill: #5d6c7b;
+  transition: fill 0.2s;
+}
+.svg-icon-tg {
+  fill: #5d6c7b;
+  transition: fill 0.2s;
+}
 .svg-card {
   display: flex;
   align-items: center;
@@ -1058,11 +1070,13 @@ body {
   line-height: 17px;
   color: #5d6c7b;
   text-decoration: none;
+  border-bottom: 1px solid #f4f7fb;
   transition: border 0.2s;
 }
 .footer-info-requisit {
   margin-right: 2.8125rem;
   transition: border 0.2s;
+  border-bottom: 1px solid #f4f7fb;
 }
 .footer-info-social-link {
   display: flex;
@@ -1563,5 +1577,14 @@ body {
   }
   .modal-argement-link:hover {
     border-color: #6f73ee;
+  }
+  .svg-icon-viber:hover {
+    fill: #6f73ee;
+  }
+  .svg-icon-wapp:hover {
+    fill: #25d366;
+  }
+  .svg-icon-tg:hover {
+    fill: #0088cc;
   }
 }

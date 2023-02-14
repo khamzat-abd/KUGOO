@@ -50,17 +50,17 @@
         </ul>
         <div class="header-svg">
           <a href="#" class="header-svg-item">
-            <svg class="svg-icon" width="12" height="13">
+            <svg class="svg-icon-viber" width="12" height="13">
               <use href="img/sprite.svg#viber"></use>
             </svg>
           </a>
           <a href="#" class="header-svg-item">
-            <svg class="svg-icon" width="13" height="13">
+            <svg class="svg-icon-wapp" width="13" height="13">
               <use href="img/sprite.svg#wapp"></use>
             </svg>
           </a>
           <a href="#" class="header-svg-item">
-            <svg class="svg-icon" width="12" height="13">
+            <svg class="svg-icon-tg" width="12" height="13">
               <use href="img/sprite.svg#tg"></use>
             </svg>
           </a>
@@ -935,17 +935,17 @@
             <p class="footer-info-chat-text">Online чат:</p>
             <div class="footer-info-chat-link">
               <a href="#" class="header-svg-item">
-                <svg class="svg-icon" width="16" height="16">
+                <svg class="svg-icon-viber" width="16" height="16">
                   <use href="img/sprite.svg#viber"></use>
                 </svg>
               </a>
               <a href="#" class="header-svg-item">
-                <svg class="svg-icon" width="16" height="16">
+                <svg class="svg-icon-wapp" width="16" height="16">
                   <use href="img/sprite.svg#wapp"></use>
                 </svg>
               </a>
               <a href="#" class="header-svg-item">
-                <svg class="svg-icon" width="16" height="16">
+                <svg class="svg-icon-tg" width="16" height="16">
                   <use href="img/sprite.svg#tg"></use>
                 </svg>
               </a>
