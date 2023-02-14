@@ -179,17 +179,17 @@
         <button class="button-input" type="submit"></button>
       </div>
       <div class="svg-card">
-        <a href="" class="svg-card-item">
+        <a href="#" class="svg-card-item">
           <svg class="svg-card-icon" width="20" height="20">
             <use href="img/sprite.svg#balance"></use>
           </svg>
         </a>
-        <a href="" class="svg-card-item">
+        <a href="#" class="svg-card-item">
           <svg class="svg-card-icon" width="20" height="20">
             <use href="img/sprite.svg#heart"></use>
           </svg>
         </a>
-        <a href="" class="svg-card-item">
+        <a href="#" class="svg-card-item">
           <svg class="svg-card-icon" width="20" height="20">
             <use href="img/sprite.svg#shoping"></use>
           </svg>
