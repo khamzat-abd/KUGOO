@@ -740,7 +740,7 @@
                   >Введите Ваш email</label
                 >
               </div>
-              <button type="submit" class="footer-mail-button">
+              <button type="submit" class="footer-mail-button" data-target="#alert-modal">
                 <span class="footer-mail-button-text">Подписаться</span>
               </button>
             </form>

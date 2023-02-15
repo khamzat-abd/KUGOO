@@ -76,7 +76,7 @@ formsTel.forEach((form) => {
     .addField("[name=ctahighload]", [
       {
         rule: "required",
-        errorMessage: " ",
+        errorMessage: "Примите соглашение",
       },
     ])
     .onSuccess((event) => {
@@ -134,9 +134,17 @@ validation
       }).then((response) => {
         if (response.ok) {
           thisForm.reset();
-          alert("Форма отправлена");
+          alertModal.classList.add("is-open");
+          /* отслеживаем клик по пустому полю*/
+          currentModal.addEventListener("click", (event) => {
+            /* если клик в пустую область */
+            if (!event.composedPath().includes(modalContainer)) {
+              /* закрываем окно */
+              currentModal.classList.remove("is-open");
+            }
+          });
         } else {
-          alert("Ошибка");
+          alert(response.statusText);
         }
       });
     };

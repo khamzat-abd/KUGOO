@@ -753,6 +753,7 @@ body {
   gap: 12px;
   margin-top: 1.25rem;
   margin-left: -0.75rem;
+  position: absolute;
 }
 .cta-argeement-text {
   font-family: "Jost";
@@ -763,6 +764,7 @@ body {
   color: #282739;
   max-width: 19.375rem;
   margin: 0;
+  margin-top: 0.5rem;
 }
 .cta-argeement-link {
   color: #282739;
@@ -790,6 +792,9 @@ body {
 .cta-argeement-input:checked ~ label::before {
   color: #6f73ee;
   border: 1.3px solid #f0f1f5;
+}
+.cta-argeement-input.is-invalid {
+  border: red;
 }
 .footer-mail {
   background-color: #6f73ee;
