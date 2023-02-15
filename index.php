@@ -676,7 +676,7 @@
               <p class="cta-form-text">
                 Оставьте заявку, и менеджер подберет нужный самокат
               </p>
-              <form action="handler.php" method="POST" class="cta-form form-box form-tel">
+              <form action="handler.php" method="POST" class="cta-form form-box">
                 <div class="input-group-button">
                   <div class="input-group">
                     <input
@@ -692,7 +692,7 @@
                       >Номер телефона</label
                     >
                   </div>
-                  <button type="submit" class="cta-button">
+                  <button type="submit" class="cta-button" data-target="#alert-modal">
                     <span class="cta-button-text"
                       >Оставить заявку на тест-драйв</span
                     >
@@ -967,7 +967,7 @@
             Менеджер свяжется с вами в течение 5 минут, чтобы согласовать время.
           </p>
           <p class="modal-dialog-form-text">Как с вами удобнее связаться?</p>
-          <form action="handler.php" method="POST"  class="modal-form form-box form-tel">
+          <form action="handler.php" method="POST"  class="modal-form form-tel">
             <div class="modal-form-button">
               <div class="input-group modal-input-group">
                 <input

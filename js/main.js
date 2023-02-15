@@ -1,4 +1,5 @@
 const formsTel = document.querySelectorAll(".form-tel");
+const formBox = document.querySelectorAll(".form-box");
 const formMail = document.querySelector(".form-mail");
 const header = document.querySelector(".header");
 const seporator = document.querySelector(".seporator-header");
@@ -93,6 +94,56 @@ formsTel.forEach((form) => {
             alertModal.classList.add("is-open");
             currentModal = alertModal;
             modalContainer = currentModal.querySelector(".modal-container");
+            /* отслеживаем клик по пустому полю*/
+            currentModal.addEventListener("click", (event) => {
+              /* если клик в пустую область */
+              if (!event.composedPath().includes(modalContainer)) {
+                /* закрываем окно */
+                currentModal.classList.remove("is-open");
+              }
+            });
+          } else {
+            alert(response.statusText);
+          }
+        });
+      };
+      ajaxSend(formData);
+    });
+});
+
+formBox.forEach((form) => {
+  const validation = new JustValidate(form, {
+    errorFieldCssClass: "is-invalid",
+  });
+  validation
+    .addField("[name=userphone]", [
+      {
+        rule: "required",
+        errorMessage: "Укажите телефон",
+      },
+      {
+        rule: "minLength",
+        value: 16,
+        errorMessage: "Укажите телефон",
+      },
+    ])
+    .addField("[name=ctahighload]", [
+      {
+        rule: "required",
+        errorMessage: "Примите соглашение",
+      },
+    ])
+    .onSuccess((event) => {
+      const thisForm = event.target;
+      const formData = new FormData(thisForm);
+      const ajaxSend = (formData) => {
+        fetch(thisForm.getAttribute("action"), {
+          method: thisForm.getAttribute("method"),
+          body: formData,
+        }).then((response) => {
+          if (response.ok) {
+            thisForm.reset();
+            alertModal.classList.add("is-open");
             /* отслеживаем клик по пустому полю*/
             currentModal.addEventListener("click", (event) => {
               /* если клик в пустую область */
